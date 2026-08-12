@@ -16,9 +16,9 @@ Edit `APP_URL` in `public/app.js` if the live app is not `https://ekaadh.com`.
 
 ## Railway
 
-1. Push this folder as its **own GitHub repo** (or set Railway **Root Directory** to `Ekaadh-landing` if it lives in a monorepo).
-2. New Railway project → Deploy from that repo.
-3. Railway runs Nixpacks, then `serve` on `$PORT`.
-4. Optional: attach custom domain (`ekaadh.com`) in Railway → Settings → Networking.
+1. Push this repo to GitHub (`moecutte/Ekaadh-landing`).
+2. Railway project → Deploy from that repo. Leave **Root Directory** empty.
+3. Railway builds the `Dockerfile` and serves `public/` on `$PORT`.
+4. Service → **Settings** → **Networking** → **Generate domain**.
 
 No database or env vars required.
