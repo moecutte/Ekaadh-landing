@@ -1,0 +1,16 @@
+{
+  "name": "ekaadh-landing",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Standalone Ekaadh marketing landing page for Railway",
+  "scripts": {
+    "start": "serve public --no-clipboard -l tcp://0.0.0.0:$PORT",
+    "dev": "serve public --no-clipboard -l 3000"
+  },
+  "dependencies": {
+    "serve": "^14.2.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

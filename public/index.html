@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ekaadh — Coming soon</title>
+  <meta name="description" content="Ekaadh is coming soon. Digital invitations and event management. QR tickets. Pay with Zaad or eDahab.">
+  <meta name="theme-color" content="#f4f1ea">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="stage" aria-hidden="true">
+    <div class="wash wash-a"></div>
+    <div class="wash wash-b"></div>
+    <div class="wash wash-c"></div>
+    <div class="veil"></div>
+  </div>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Ekaadh">
+        <img src="./assets/ekaadh-logo.png" alt="Ekaadh">
+      </a>
+      <div class="nav-right">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en" class="is-on">ENG</button>
+          <button type="button" data-lang="so">SOM</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="page">
+    <section class="hero wrap">
+      <p class="soon">
+        <span class="soon-dot" aria-hidden="true"></span>
+        <span data-i18n="soon">Coming soon</span>
+      </p>
+
+      <h1>
+        <span class="line" data-i18n="hero_1">Digital invitations</span>
+        <span class="line serif" data-i18n="hero_2">and event management</span>
+      </h1>
+
+      <p class="lead" data-i18n="hero_sub">Create private invitations, publish events, and check guests in with a QR. Pay with Zaad or eDahab. Opening soon.</p>
+
+      <ul class="pills">
+        <li data-i18n="pill_1">Public QR tickets</li>
+        <li data-i18n="pill_2">Private invitations</li>
+        <li data-i18n="pill_3">Zaad &amp; eDahab</li>
+      </ul>
+    </section>
+
+    <section class="showcase wrap" aria-hidden="true">
+      <article class="float-card invite">
+        <div class="bow"></div>
+        <p class="kicker">Private invite</p>
+        <p class="card-title">You’re invited</p>
+        <p class="card-meta">Save the date</p>
+      </article>
+      <article class="float-card ticket">
+        <p class="kicker">Ekaadh ticket</p>
+        <p class="card-title">Admit one</p>
+        <p class="card-meta">Scan at the door</p>
+        <div class="qr"></div>
+        <div class="perf"></div>
+      </article>
+    </section>
+
+    <section class="who wrap">
+      <h2 data-i18n="who_title">What we are building</h2>
+      <div class="cards">
+        <article class="card">
+          <span class="mark">01</span>
+          <h3 data-i18n="att_title">For attendees</h3>
+          <p data-i18n="att_desc">Find the event. Pay on your phone. Walk in with a QR.</p>
+        </article>
+        <article class="card">
+          <span class="mark">02</span>
+          <h3 data-i18n="org_title">For organisers</h3>
+          <p data-i18n="org_desc">Publish the event. Sell seats. Get paid after the show.</p>
+        </article>
+        <article class="card">
+          <span class="mark">03</span>
+          <h3 data-i18n="host_title">For hosts</h3>
+          <p data-i18n="host_desc">Design the invitation. Invite by phone. Keep it private.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <img src="./assets/ekaadh-logo.png" alt="">
+      <p data-i18n="footer">Your event · your ticket. Opening soon. © {year} Ekaadh.</p>
+      <div class="wallets">
+        <span>Zaad</span>
+        <span>eDahab</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
