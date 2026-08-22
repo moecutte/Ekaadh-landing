@@ -22,3 +22,10 @@ Edit `APP_URL` in `public/app.js` if the live app is not `https://ekaadh.com`.
 4. Service → **Settings** → **Networking** → **Generate domain**.
 
 No database or env vars required.
+
+Google Play URLs (after deploy):
+
+- Privacy policy: `https://ekaadh.com/privacy`
+- Terms: `https://ekaadh.com/terms`
+- Account deletion: `https://ekaadh.com/account-deletion`
+

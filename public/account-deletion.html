@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delete your Ekaadh account</title>
+  <meta name="description" content="How to delete your Ekaadh account from the app or by email, even if you have uninstalled the app.">
+  <meta name="theme-color" content="#f4f1ea">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-title-key="delete_title">
+  <div class="stage" aria-hidden="true">
+    <div class="wash wash-a"></div>
+    <div class="wash wash-b"></div>
+    <div class="wash wash-c"></div>
+    <div class="veil"></div>
+  </div>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="./" aria-label="Ekaadh">
+        <img src="./assets/ekaadh-logo.png" alt="Ekaadh">
+      </a>
+      <div class="nav-right">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en" class="is-on">ENG</button>
+          <button type="button" data-lang="so">SOM</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <article class="legal wrap">
+      <p class="legal-kicker" data-i18n="delete_kicker">Account</p>
+      <h1 data-i18n="delete_title">Delete your Ekaadh account</h1>
+      <p class="legal-intro" data-i18n="delete_intro">You can delete your customer account at any time. Use the app if you still have it installed, or email us if you have uninstalled it. Organizer and staff accounts cannot be deleted from the app — email us instead.</p>
+
+      <section class="legal-card">
+        <h2 data-i18n="delete_app_title">Delete from the Ekaadh app</h2>
+        <p data-i18n="delete_app_lead">This is the fastest option if the app is still on your phone.</p>
+        <ol>
+          <li data-i18n="delete_app_1">Open the Ekaadh app and sign in.</li>
+          <li data-i18n="delete_app_2">Go to Profile.</li>
+          <li data-i18n="delete_app_3">Tap Delete account.</li>
+          <li data-i18n="delete_app_4">Enter your password to confirm. Deletion is immediate.</li>
+        </ol>
+      </section>
+
+      <section class="legal-card">
+        <h2 data-i18n="delete_email_title">Request deletion by email</h2>
+        <p data-i18n="delete_email_lead">Use this if you uninstalled the app, cannot sign in, or have an organizer/staff account.</p>
+        <p data-i18n="delete_email_to">Send a message to:</p>
+        <a class="mail-btn" href="mailto:hello@ekaadh.com?subject=Delete%20my%20Ekaadh%20account">hello@ekaadh.com</a>
+        <p data-i18n="delete_email_include">Include:</p>
+        <ul>
+          <li data-i18n="delete_email_item_name">The name on the account</li>
+          <li data-i18n="delete_email_item_phone">The phone number used to sign in or buy tickets</li>
+          <li data-i18n="delete_email_item_email">The email on the account, if you added one</li>
+        </ul>
+        <p data-i18n="delete_email_sla">We process requests within 7 days after we can verify the account.</p>
+      </section>
+
+      <section class="legal-card">
+        <h2 data-i18n="delete_what_title">What is deleted</h2>
+        <p data-i18n="delete_what_deleted">We remove your login, name, phone, email, password, push tokens, and in-app notifications. You will not be able to sign in again with that account.</p>
+        <p data-i18n="delete_what_kept">Tickets and orders you already paid for stay valid for the event and for our financial records. Those records are no longer linked to an active login.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <img src="./assets/ekaadh-logo.png" alt="">
+      <div>
+        <p data-i18n="footer">Your event · your ticket. Opening soon. © {year} Ekaadh.</p>
+        <nav class="footer-links">
+          <a class="footer-link" href="./privacy" data-i18n="privacy_footer">Privacy policy</a>
+          <a class="footer-link" href="./terms" data-i18n="terms_footer">Terms</a>
+          <a class="footer-link" href="./account-deletion" data-i18n="delete_footer">Delete account</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

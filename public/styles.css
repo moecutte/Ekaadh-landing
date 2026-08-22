@@ -344,8 +344,104 @@ a { color: inherit; text-decoration: none; }
 
 .footer img { height: 24px; width: auto; }
 
+.footer-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--brand);
+}
+
+.footer-link:hover { text-decoration: underline; }
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin-top: 8px;
+}
+
+.footer-links .footer-link { margin-top: 0; }
+
+.legal {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 36px 0 24px;
+}
+
+.legal-kicker {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 12px;
+}
+
+.legal h1 {
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.legal-intro {
+  color: var(--mute);
+  font-size: 16px;
+  line-height: 1.65;
+  margin-bottom: 28px;
+}
+
+.legal-card {
+  background: var(--panel);
+  border: 1px solid rgba(26, 31, 58, 0.08);
+  border-radius: 20px;
+  padding: 22px 24px;
+  margin-bottom: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.legal-card h2 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.legal-card p {
+  color: var(--mute);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.legal-card p:last-child { margin-bottom: 0; }
+
+.legal-card ol,
+.legal-card ul {
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.mail-btn {
+  display: inline-flex;
+  align-items: center;
+  background: var(--brand);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 12px;
+  margin: 4px 0 12px;
+}
+
+.mail-btn:hover { filter: brightness(1.08); }
+
 .wallets {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -395,6 +491,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (max-width: 640px) {
+  .headline { font-size: clamp(36px, 12vw, 52px); }
   .store-play, .store-apple { transform: none; }
   .footer-inner { flex-direction: column; text-align: center; }
 }
